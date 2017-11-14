@@ -1,0 +1,85 @@
+uuid: 32290ef7-233d-4e51-bdac-38fc64c4dae5
+langcode: en
+status: true
+dependencies: {  }
+label: 'app csv import'
+id: app_csv_import
+description: ''
+import_period: 3600
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: 0
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  update_existing: 0
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+  authorize: true
+  skip_hash_check: false
+  values:
+    type: application
+mappings:
+  -
+    target: title
+    map:
+      value: ''
+    unique:
+      value: '1'
+  -
+    target: field_status
+    map:
+      value: ''
+    unique: {  }
+  -
+    target: field_priority
+    map:
+      value: ''
+  -
+    target: field_used_by
+    map:
+      value: ''
+    unique: {  }
+  -
+    target: field_org_code
+    map:
+      value: ''
+    unique: {  }
+  -
+    target: field_organization
+    map:
+      value: ''
+    unique: {  }
+  -
+    target: field_stakeholders
+    map:
+      value: ''
+  -
+    target: field_developers
+    map:
+      value: ''
+  -
+    target: field_technologies
+    map:
+      value: ''
+    unique: {  }
+  -
+    target: field_authentication
+    map:
+      value: ''
+  -
+    target: field_production_database
+    map:
+      value: ''
+    unique: {  }
+  -
+    target: field_production_webserver
+    map:
+      value: ''
+    unique: {  }

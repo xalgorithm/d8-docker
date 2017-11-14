@@ -1,0 +1,82 @@
+uuid: 0495975a-4b06-43a4-b6aa-019bb381ba5a
+langcode: en
+status: true
+dependencies: {  }
+label: xml-based-app-import
+id: xml_based_app_import
+description: ''
+import_period: 3600
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'public://feeds'
+parser: opml
+parser_configuration: {  }
+processor: 'entity:node'
+processor_configuration:
+  update_existing: 0
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+  authorize: true
+  skip_hash_check: false
+  values:
+    type: application
+mappings:
+  -
+    target: title
+    map:
+      value: title
+    unique:
+      value: '1'
+  -
+    target: field_status
+    map:
+      value: categories
+    unique: {  }
+  -
+    target: field_priority
+    map:
+      value: categories
+  -
+    target: field_used_by
+    map:
+      value: categories
+    unique: {  }
+  -
+    target: field_org_code
+    map:
+      value: categories
+    unique: {  }
+  -
+    target: field_organization
+    map:
+      value: categories
+    unique: {  }
+  -
+    target: field_stakeholders
+    map:
+      value: categories
+  -
+    target: field_developers
+    map:
+      value: categories
+  -
+    target: field_technologies
+    map:
+      value: categories
+    unique: {  }
+  -
+    target: field_authentication
+    map:
+      value: categories
+  -
+    target: field_production_database
+    map:
+      value: categories
+    unique: {  }
+  -
+    target: field_production_webserver
+    map:
+      value: categories
+    unique: {  }

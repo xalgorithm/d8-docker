@@ -1,0 +1,19 @@
+uuid: fc5b9f29-a5b2-42a1-8bef-a281fea89ba9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_production_webserver
+    - node.type.application
+id: node.application.field_production_webserver
+field_name: field_production_webserver
+entity_type: node
+bundle: application
+label: 'Production Webserver'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

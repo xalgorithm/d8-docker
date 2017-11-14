@@ -1,0 +1,19 @@
+uuid: 261aaa55-47c4-4260-90cd-8b5c369a1f3f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_developers
+    - node.type.application
+id: node.application.field_developers
+field_name: field_developers
+entity_type: node
+bundle: application
+label: Developers
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

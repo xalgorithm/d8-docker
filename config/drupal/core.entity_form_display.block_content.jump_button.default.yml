@@ -1,0 +1,32 @@
+uuid: 0997c748-62ab-45ec-8e4f-2c7f5bb6626d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.jump_button
+    - field.field.block_content.jump_button.body
+  module:
+    - text
+id: block_content.jump_button.default
+targetEntityType: block_content
+bundle: jump_button
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }
