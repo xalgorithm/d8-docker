@@ -1,15 +1,15 @@
-uuid: 007e3324-fd79-498a-8c56-36c5d740c2e9
+uuid: 76a5adae-d0ac-4b87-849c-e59633d8bd9b
 langcode: en
-status: false
+status: true
 dependencies:
   module:
     - system
   theme:
-    - seven
+    - material_cascade
 _core:
   default_config_hash: fRKXNB91UxDvEMkzCR8ZBsawfC6Fqbme2gtobei3gu4
-id: seven_branding
-theme: seven
+id: material_cascade_branding
+theme: material_cascade
 region: header
 weight: 0
 provider: null
@@ -19,7 +19,7 @@ settings:
   label: 'Site branding'
   provider: system
   label_display: '0'
-  use_site_logo: true
+  use_site_logo: false
   use_site_name: true
-  use_site_slogan: true
+  use_site_slogan: false
 visibility: {  }

@@ -1,0 +1,118 @@
+uuid: b862562d-1d95-4457-abad-837ba27297ab
+langcode: en
+status: open
+dependencies: {  }
+open: null
+close: null
+uid: 1
+template: false
+id: test
+title: test
+description: ''
+category: ''
+elements: "app_information:\n  '#type': fieldset\n  '#title': 'App Info'\n  app_name:\n    '#type': textfield\n    '#title': 'Application Name'\n    '#required': true\n  owner:\n    '#type': textfield\n    '#title': Owner/Sponsor\n    '#required': true\n  status:\n    '#type': textfield\n    '#title': Status\n    '#required': true\n  priority:\n    '#type': textfield\n    '#title': Priority\n    '#required': true\n  used_by:\n    '#type': textfield\n    '#title': 'Used By'\n    '#required': true\n  org_code_s:\n    '#type': textfield\n    '#title': 'Org Code'\n    '#required': true\n  organization:\n    '#type': textfield\n    '#title': Organization\n    '#required': true\n  developers:\n    '#type': textfield\n    '#title': Developers\n    '#required': true\n  stakeholders:\n    '#type': textarea\n    '#title': Stakeholders\n    '#required': true\n  authentication:\n    '#type': textarea\n    '#title': 'Authentication Method'\n    '#required': true\n  prod_db:\n    '#type': textarea\n    '#title': 'Production Database'\n    '#required': true\n  prod_http:\n    '#type': textarea\n    '#title': 'Production Webserver'\n    '#required': true\nevaluation_information:\n  '#type': fieldset\n  '#title': Evaluation\n  criteria:\n    '#type': webform_likert\n    '#title': 'How would you rate the applications ...'\n    '#required': true\n    '#questions':\n      quality: 'Quality - does the app perform well. Is it designed well?'\n      framework_antiquity: 'Antiquity - how old is the platform? Is the platform suppored by its author? .NET 2,ASP,PHP4,etc'\n      optics: 'In terms of how the user views the application'\n      risk: 'Does this app represent a threat, or have a lot of Risk involved?'\n      accesibility: 'Does the application frustrate people? Can the app be used by individuals with physical challenges?'\n    '#answers': likert_ten_scale\n    '#na_answer_text': ''\n  application_comments:\n    '#type': textarea\n    '#title': 'What else would you like to note about this application?'\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': Apply\n"
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  form_submit_once: false
+  form_exception_message: ''
+  form_open_message: ''
+  form_close_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_reset: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_autofocus: false
+  form_details_toggle: false
+  submission_label: ''
+  submission_log: false
+  submission_user_columns: {  }
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_start_label: ''
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_track: ''
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  confirmation_type: page
+  confirmation_title: ''
+  confirmation_message: ''
+  confirmation_url: ''
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  limit_total: null
+  limit_total_message: ''
+  limit_user: null
+  limit_user_message: ''
+  purge: none
+  purge_days: null
+  entity_limit_total: null
+  entity_limit_user: null
+  results_disabled: false
+  results_disabled_ignore: false
+  token_update: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers: {  }

@@ -1,0 +1,10 @@
+uuid: 1d25af3d-9011-4ffd-9fe2-c128aaeba381
+langcode: en
+status: true
+dependencies:
+  module:
+    - feeds
+id: feeds_feed.token
+label: Token
+targetEntityType: feeds_feed
+cache: true
