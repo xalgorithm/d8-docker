@@ -1,8 +1,0 @@
-uuid: 7b8b40ae-d4e4-49f2-a52c-4a4ed02e808c
-langcode: en
-status: true
-dependencies: {  }
-id: jump_button
-label: 'Jump Button'
-revision: 0
-description: 'a block to hold a jump button'

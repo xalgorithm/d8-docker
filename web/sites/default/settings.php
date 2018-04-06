@@ -743,7 +743,10 @@ $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
  * will allow the site to run off of all variants of example.com and
  * example.org, with all subdomains included.
  */
-
+ $settings['trusted_host_patterns'] = array(
+   '^stanford\.edu$',
+   '^.+\.stanford\.edu$',
+ );
 /**
  * The default list of directories that will be ignored by Drupal's file API.
  *
@@ -792,11 +795,11 @@ if (file_exists(__DIR__ . '/settings.local.php') && (getenv('ENVIRONMENT') == 'D
 }
 
 $databases['default']['default'] = array (
-  'database' => getenv('DRUPAL_DATABASE') ?: 'drupal',
-  'username' => getenv('DRUPAL_DATABASE_USER') ?: 'drupal',
-  'password' => getenv('DRUPAL_DATABASE_PASSWORD') ?: 'drupalpw',
+  'database' => getenv('DRUPAL_DATABASE') ?: 'drupal1',
+  'username' => getenv('DRUPAL_DATABASE_USER') ?: 'drupal1',
+  'password' => getenv('DRUPAL_DATABASE_PASSWORD') ?: 'y&s3yfF^PI5FxzC^',
   'prefix' => '',
-  'host' => getenv('DRUPAL_DATABASE_HOST') ?: 'db',
+  'host' => getenv('DRUPAL_DATABASE_HOST') ?: 'slac-mysql',
   'port' => '3306',
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',

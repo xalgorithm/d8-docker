@@ -5,25 +5,22 @@ services:
   web:
     build: . # Can't be below this since we have to add files in public/
     ports:
-     - "127.0.0.1:8082:80"
+     - "8082:80"
     volumes:
-     - .:/var/www/html
-    links:
-     - db
+     - slac-web:/var/www/html
+    external_links:
+     - slac-mysql:mysql
     environment:
      - ENVIRONMENT=DEV
      - DRUPAL_INSTALL=TRUE
-     - SITE_URL=http://localhost:8082
+     - SITE_URL=http://docker.slac.stanford.edu:8082
      - HTPASSWD_USER
      - HTPASSWD_PASSWORD
-  db:
-    image: mysql:5.7
-    environment:
-     - MYSQL_ROOT_PASSWORD=docker
-     - MYSQL_DATABASE=drupal
-     - MYSQL_USER=drupal
-     - MYSQL_PASSWORD=drupalpw
-    volumes:
-     - data:/var/lib/mysql
+    networks:
+     - mysql_default
 volumes:
-  data: {}
+  slac-web:
+    external: true 
+networks: 
+  mysql_default:
+    external: true

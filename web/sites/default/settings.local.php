@@ -94,6 +94,3 @@ $settings['rebuild_access'] = TRUE;
 
 $config['google_analytics.settings']['debug'] = TRUE;
 
-$settings['trusted_host_patterns'] = array(
-  '^localhost$',
-);
